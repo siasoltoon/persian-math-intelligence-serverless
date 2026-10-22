@@ -1,0 +1,20 @@
+{
+  "name": "persian-math-intelligence-serverless",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram Serverless request intake for an external Persian math/OCR backend",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node --check tgcloud/schema.js && node --check tgcloud/handlers/message.js",
+    "diff": "tgcloud diff",
+    "deploy": "tgcloud push",
+    "migrate": "tgcloud migrate",
+    "status": "tgcloud status"
+  },
+  "devDependencies": {
+    "@tgcloud/cli": "^0.2.0"
+  }
+}
